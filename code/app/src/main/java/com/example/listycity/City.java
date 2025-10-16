@@ -14,7 +14,7 @@ public class City implements Comparable<City> {
      * @param city The city name
      * @param province The province of the city
      */
-    City(String city, String province) {
+    public City(String city, String province) {
         this.city = city;
         this.province = province;
     }
@@ -50,7 +50,7 @@ public class City implements Comparable<City> {
      * Checks whether a given object is equal to this City. Compares the city name and
      * province attributes.
      * @param o The object to compare with
-     * @return true if it is equal
+     * @return true if it is equal, false otherwise
      */
     @Override
     public boolean equals(Object o) {
